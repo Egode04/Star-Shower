@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Star Shower</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+        <style>
+
+            canvas {
+                cursor: none;
+            }
+
+            body {
+                margin: 0;
+                overflow: hidden;
+                background: #182028;
+            }
+
+            canvas {
+                position: fixed;
+                z-index: -1;
+            }
+        </style>
+
+    </head>
+    <body class="select-none">
+
+        <div style="position: absolute; width: 100vw; height: 100vh;">
+            <div style="position: relative; font-family: 'Grape Nuts', cursive;">
+                <h1
+                    style="
+                        font-size: 5rem;
+                        color: #e3eaef;
+                        text-shadow: 0 0 1rem #e3eaef;
+                        text-align: center;
+                    "
+                >Star Shower</h1>
+            </div>
+        </div>
+        
+        <canvas></canvas>
+
+        <script src="/src/js/utils.js"></script>
+        <script src="/src/js/canvas.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </body>
+</html>
