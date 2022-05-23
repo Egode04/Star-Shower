@@ -2,7 +2,7 @@ const canvas = document.querySelector('canvas')
 const c = canvas.getContext('2d')
 
 canvas.width = innerWidth
-canvas.height = innerHeight*2/3
+canvas.height = innerHeight*3.8/4
 
 const colors = [
 
@@ -664,7 +664,7 @@ function animate() {
 
         }))
 
-        framesHold = randomIntFromRange(100, 200)
+        framesHold = randomIntFromRange(150, 200)
 
     }
 

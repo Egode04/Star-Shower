@@ -9,20 +9,41 @@
         <link rel="shortcut icon" href="/dist/favicon.ico">
         <style>
 
-            canvas {
-                cursor: none;
-            }
-
             body {
                 margin: 0;
-                overflow: hidden;
-                background: #182028;
+                overflow-x: hidden;
+                overflow-y: over;
+                background: rgb(24,32,40);
+                background: linear-gradient(180deg, rgba(24,32,40,1) 0%, rgba(24,32,40,1) 50%, rgba(38,51,62,1) 100%);
+                height: 200vh;
             }
 
             canvas {
-                position: fixed;
                 z-index: -1;
             }
+
+            /* width */
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            /* Track */
+            ::-webkit-scrollbar-track {
+                background: rgb(23,30,38);
+                box-shadow: 0 0 5px #171e26;
+            }
+            
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+                background: #26333e;
+                transition: all 500ms ease-in-out;
+            }
+
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+                background: #324452; 
+            }
+
         </style>
 
     </head>
@@ -42,6 +63,20 @@
         </div>
         
         <canvas></canvas>
+
+        <div style="position: absolute; width: 100vw; height: 100vh;">
+            <div style="position: relative; font-family: 'Grape Nuts', cursive;">
+                <h1
+                    style="
+                        font-size: 5rem;
+                        color: #e3eaef;
+                        text-shadow: 0 0 1rem #e3eaef;
+                        text-align: center;
+                        margin-top: calc(100vh - (100vh * (3.8/4)));
+                    "
+                >Nothing Down Here :)</h1>
+            </div>
+        </div>
 
         <script src="/src/js/utils.js"></script>
         <script src="/src/js/canvas.js"></script>
